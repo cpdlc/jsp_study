@@ -1,0 +1,40 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+
+body{font:15px "맑은 고딕";}
+
+header{
+	background: skyblue;
+	padding: 20px 0;
+	text-align: center;
+	min-width: 80%;
+	margin: 0 auto;
+}
+
+section{
+	border: 1px solid pink;
+	width:80%;
+	margin: 50px auto;
+	padding: 20px;
+	box-sizing: border-box;
+}
+section h2{
+	background: #eee;
+	padding: 10px;
+	font-size: 1.3em;
+	margin-bottom: 20px;
+}
+
+/*section 1*/
+.contentWrap{}
+.contentWrap ul{
+	margin-bottom: 50px;
+	margin-left:50px;
+}
+table,td,th{
+	border:1px solid #aaa;
+	border-collapse: collapse;
+	padding: 5px 10px;
+}
+table{width:100%;}
+th{background: #ccc;}

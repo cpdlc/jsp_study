@@ -5,6 +5,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>jsp 기본문법</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<header>
@@ -36,8 +37,37 @@
 					<td>자바코드를 기술함</td>
 					<td>&lt;% &nbsp; %&gt;</td>
 				</tr>
+				
+				<tr>
+					<td>선언(declaration)</td>
+					<td>멤버변수와 메소드를 선언함</td>
+					<td>&lt;%! &nbsp; %&gt;</td>
+				</tr>
+				
+				<tr>
+					<td>표현식(expression)</td>
+					<td>계산식이나 함수를 호출한 결과를 문자열 형태로 출력함</td>
+					<td>&lt;%= &nbsp; %&gt;</td>
+				</tr>
+				
+				<tr>
+					<td>주석(comment)</td>
+					<td>jsp 페이지에 설명을 넣음</td>
+					<td>&lt;%-- &nbsp; --%&gt;</td>
+				</tr>
+				
+				<tr>
+					<td>지시자(directive)</td>
+					<td>jsp페이지에 속성을 지정함</td>
+					<td>&lt;%@ &nbsp; %&gt;</td>
+				</tr>
 			</table>
 		</div>
 	</section>
+	
+	<section>
+		<h2>▶ 스크립트릿<span style="" color="red">=>&lt;% &nbsp; %&gt;</span></h2>
+	</section>
+	
 </body>
 </html>
