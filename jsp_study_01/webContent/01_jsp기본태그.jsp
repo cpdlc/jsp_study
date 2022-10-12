@@ -66,7 +66,20 @@
 	</section>
 	
 	<section>
-		<h2>▶ 스크립트릿<span style="" color="red">=>&lt;% &nbsp; %&gt;</span></h2>
+		<h2>▶ 스크립트릿 => <span style="" color="red">&lt;% &nbsp; %&gt;</span></h2>
+		<%
+			int num1=20;
+			int num2=10;
+			int add = num1 + num2;
+			out.print(num1 +"+"+num2+"="+add);
+		%>
+	</section>
+	
+	<section>
+		<h2>▶ 선언 => <span style="" color="red">&lt;% &nbsp; %&gt;</span></h2>
+		<%
+			
+		%>
 	</section>
 	
 </body>
