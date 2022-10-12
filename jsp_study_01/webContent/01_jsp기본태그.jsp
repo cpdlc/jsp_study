@@ -77,6 +77,7 @@
 	
 	<section>
 		<h2>▶ 선언 => <span style="" color="red">&lt;%! &nbsp; %&gt;</span></h2>
+		<%-- 자바 선언부 --%>
 		<%!
 			String str="안녕하세요!";
 			int a=5, b=5;
@@ -85,8 +86,15 @@
 				if(n<0){
 					n =- n;
 				}
+				return n;
 			} 
 			
+		%>
+		
+		<%-- 자바 실행부 --%>
+		<%
+			out.print(str + "<br/>");
+			out.print(a+"의 절대값은 : "+abs(a) + "<br/>");
 		%>
 	</section>
 	
