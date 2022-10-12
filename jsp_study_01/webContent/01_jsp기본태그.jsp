@@ -76,7 +76,7 @@
 	</section>
 	
 	<section>
-		<h2>▶ 선언 => <span style="" color="red">&lt;% &nbsp; %&gt;</span></h2>
+		<h2>▶ 선언 => <span style="" color="red">&lt;%! &nbsp; %&gt;</span></h2>
 		<%
 			
 		%>
