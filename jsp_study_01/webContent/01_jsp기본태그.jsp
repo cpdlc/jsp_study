@@ -77,7 +77,13 @@
 	
 	<section>
 		<h2>▶ 선언 => <span style="" color="red">&lt;%! &nbsp; %&gt;</span></h2>
-		<%
+		<%!
+			String str="안녕하세요!";
+			int a=5, b=5;
+			
+			public int abs(int n){
+				
+			} 
 			
 		%>
 	</section>
