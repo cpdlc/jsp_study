@@ -82,7 +82,9 @@
 			int a=5, b=5;
 			
 			public int abs(int n){
-				
+				if(n<0){
+					n =- n;
+				}
 			} 
 			
 		%>
