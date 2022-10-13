@@ -1,3 +1,5 @@
+<%@page import="java.text.SimpleDateFormat"%>
+<%@page import="java.util.Calendar"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -66,7 +68,7 @@
 	</section>
 	
 	<section>
-		<h2>▶ 스크립트릿 => <span style="" color="red">&lt;% &nbsp; %&gt;</span></h2>
+		<h2>▶ 스크립트릿 => <span style="color:red">&lt;% &nbsp; %&gt;</span></h2>
 		<%
 			int num1=20;
 			int num2=10;
@@ -76,7 +78,7 @@
 	</section>
 	
 	<section>
-		<h2>▶ 선언 => <span style="" color="red">&lt;%! &nbsp; %&gt;</span></h2>
+		<h2>▶ 선언 => <span style="color:red">&lt;%! &nbsp; %&gt;</span></h2>
 		<%-- 자바 선언부 --%>
 		<%!
 			String str="안녕하세요!";
@@ -95,7 +97,42 @@
 		<%
 			out.print(str + "<br/>");
 			out.print(a+"의 절대값은 : "+abs(a) + "<br/>");
+			out.print(b+"의 절대값은 : "+abs(b) + "<br/>");
 		%>
+	</section>
+	
+	<section>
+		<h2>▶ 표현식 => <span style="color:red">&lt;%= &nbsp; %&gt;</span></h2>
+		<%=
+			str
+		%><br/>
+		<%= a %>의 절대값 : <%=abs(a) %><br/>
+		<%= b %>
+		의 절대값 :
+		<%=abs(b) %><br/>
+	</section>
+	
+	<section>
+		<h2>▶ 주석 => <span style="" color="red">&lt;%-- &nbsp; --%&gt;</span></h2>
+		<!-- html 주석문 : 코드보기에서 확인가능 -->
+		<%-- jsp 주석문 : 코드보기에서 확인이 안된다. --%>
+		
+		<% String name="Angel"; %>
+		Hello<%=name %>
+	</section>
+	
+	<section>
+		<h2>▶ 지시자 => <span style="" color="red">&lt;%@ &nbsp; %&gt;</span></h2>
+		
+		
+		<% 
+			Calendar date = Calendar.getInstance();
+			SimpleDateFormat today = new SimpleDateFormat("yyyy년 mm월 dd일");
+			SimpleDateFormat now = new SimpleDateFormat("hh시 mm분 ss초");
+		%>
+		
+		오늘은 <b><%=today.format(date.getTime()) %></b>입니다. <br/>
+		지금 시각은 <b><%=now.format(date.getTime()) %></b>입니다. <br/>
 	</section>
 	
 </body>
